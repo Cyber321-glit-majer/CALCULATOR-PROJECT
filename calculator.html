@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width" initial-scale="1.0">
+</head>
+	<title>CALCULATOR</title>
+	<style type="text/css">
+	body
+	{
+		position: absolute;
+	
+	}
+		
+		.container
+		{
+
+text-align: center;
+
+
+		}
+		.calc
+		{
+			font-size: 20px;
+			margin:auto;
+			background: rgb(200, 200, 200);
+			border-radius: 20px;
+			padding: 10px;
+			display: inline-block;
+			height: 440px;
+			
+			box-shadow:inset 5px 5px 5px  grey,inset -5px -5px 3px white ;
+
+
+		}
+
+		#answer
+		{
+width: 320px;
+border-radius: 20px;
+
+
+
+box-shadow:inset 5px 5px 5px 3px grey,inset -5px -5px 3px white ;
+		}
+		input
+		{
+width: 70px;
+height: 60px;
+font-size: 30px;
+box-shadow: 5px 5px 10px grey,inset -5px -20px 10px ghostwhite;
+border-radius: 25px;
+margin: 5px;
+outline: none;
+border: none;background: rgb(220, 220, 220);
+
+
+		}
+		input:hover
+		{
+			/*display:flex;
+			justify-content: safe center;
+			align-items: center;*/
+
+box-shadow:inset 15px 5px 5px 3px grey,inset -5px -5px 3px gainsboro;
+		}
+		h1{
+			width: 345px;
+			border-radius: 20px;
+			height: 50px;
+			color: black;
+			font-size: 40px;
+			backface-visibility: visible;
+			
+			text-shadow:5px 5px 5px grey;
+		box-shadow:inset 4px 5px 5px 3px grey,inset -5px -5px 3px gainsboro;
+		}
+		
+
+	</style>
+	 
+   
+<body>
+<div class="container" style="text-align: center;">
+	<h1>CALCULATOR</h1>
+
+<form name="forms" style="text-align: center;">
+	<div class="calc">
+		<input type="text" name="screen" id="answer">
+		<br>
+		<input type="button" value="1"
+		 onclick="forms.screen.value+='1'">
+
+		 <input type="button" value="2"
+		 onclick="forms.screen.value+='2'">
+
+		 <input type="button" value="3"
+		 onclick="forms.screen.value+='3'">
+
+		 <input type="button" value="AC"
+		 onclick="forms.screen.value =''">
+		 <br>
+
+		 <input type="button" value="4"
+		 onclick="forms.screen.value+='4'">
+
+		 <input type="button" value="5"
+		 onclick="forms.screen.value+='5'">
+
+		 <input type="button" value="6"
+		 onclick="forms.screen.value+='6'">
+
+		 <input type="button" value="+"
+		 onclick="forms.screen.value+='+'">
+		 <br>
+
+		 <input type="button" value="7"
+		 onclick="forms.screen.value+='7'">
+
+		 <input type="button" value="8"
+		 onclick="forms.screen.value+='8'">
+
+		 <input type="button" value="9"
+		 onclick="forms.screen.value+='9'">
+
+		 <input type="button" value="-"
+		 onclick="forms.screen.value+='-'">
+		 <br>
+
+		 <input type="button" value="."
+		 onclick="forms.screen.value+='.'">
+
+		 <input type="button" value="0"
+		 onclick="forms.screen.value+='0'">
+
+		 <input type="button" value="="
+		 onclick="forms.screen.value =eval(forms.screen.value)">
+
+		 <input type="button" value="*"
+		 onclick="forms.screen.value+='*'">
+		 <br>
+
+		 <input type="button" value="("
+		 onclick="forms.screen.value+='('">
+
+		 <input type="button" value=")"
+		 onclick="forms.screen.value+=')'">
+
+		 <input type="button" value="/"
+		 onclick="forms.screen.value+='/'">
+
+		 <input type="button" value="%"
+		 onclick="forms.screen.value+='A%'">
+	</div>
+</form>
+</div>
+</body>
+</html>
